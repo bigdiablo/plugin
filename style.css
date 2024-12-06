@@ -14,7 +14,6 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    padding: 0 32px;
 }
 
 *,
@@ -33,10 +32,8 @@ body {
     width: 100%;
     gap: 32px;
     padding-left: 72px;
+    padding-right: 72px;
     padding-bottom: 32px;
-    border-left-width: 4px;
-    border-left-style: solid;
-    border-left-color: #6bb5d8;
 }
 
 .question-settings-bar {
@@ -251,14 +248,9 @@ body {
 
 @media screen and (max-width: 600px) {
 
-    body {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
     .question-settings {
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-bottom: 12px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 24px;
     }
 }
