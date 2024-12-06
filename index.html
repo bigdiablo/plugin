@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HL Plugin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="question-settings">
+        <div class="question-settings-bar">
+            <a class="question-tab-type active">General</a>
+            <a class="question-tab-type">Validation</a>
+            <a class="question-tab-type">Conditional Logic</a>            
+        </div>
+        <div class="question-field">
+            <label>Question Type</label>
+            <input type="text" value="Options">
+            <p>This is the name which will appear on the EDIT page</p>
+        </div>
+        <div class="question-field">
+            <label>Question Name</label>
+            <input type="text" value="Property Type">
+            <p>This is the name which will appear on the EDIT page</p>
+        </div>
+        <div class="question-field">
+            <label>Question Description</label>
+            <input type="text" value="Select the type of your property">
+            <p>This is the name which will appear on the EDIT page</p>
+        </div>
+        <div class="question-field">
+            <label>Question Choices</label>
+            <textarea name="" id="" rows="5" cols="20">
+            Single Family
+            Multi-Family
+            Condominium
+            Mobile Home
+            </textarea>
+            <p>Enter each choice on a new line.</p>
+            <p>For more control, you may specify both a value and label like this:</p>
+            <p>red : Red</p>
+        </div>
+        <div class="question-field">
+            <label>Default Value</label>
+            <input type="text">
+            <p>Enter each default value on a new line</p>
+        </div>
+        <div class="question-field">
+            <label>Return Format</label>
+            <div class="question-radio-list">
+                <label>
+                    <input type="radio" name="format">
+                    Value
+                </label>
+                <label>
+                    <input type="radio" name="format">
+                    Label
+                </label>
+                <label>
+                    <input type="radio" name="format">
+                    Both (Array)
+                </label>
+            </div>
+            <p>Specify the value returned</p>
+        </div>
+        <div class="question-field true-false">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <div class="question-label">
+                <label>Select Multiple</label>
+                <p>Allow content editors to select multiple values</p>
+            </div>
+        </div>
+        <div class="question-field true-false">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <div class="question-label">
+                <label>Select Multiple</label>
+                <p>Allow content editors to select multiple values</p>
+            </div>
+        </div>
+        <div class="question-settings-footer">
+            <button>Add Question</button>
+            <button>Remove Question</button>
+        </div>
+    </div>
+</body>
+</html>
