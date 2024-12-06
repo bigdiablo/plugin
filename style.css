@@ -89,7 +89,8 @@ body {
     gap: 3px;
 }
 
-.question-field input[type=text] {
+.question-field input[type=text],
+.question-field textarea {
     height: 48px;
     padding-right: 12px;
     padding-left: 12px;
@@ -105,7 +106,15 @@ body {
     line-height: 1.5;
 }
 
-.question-field input[type=text]:focus {
+.question-field textarea {
+    font-family: -apple-system, Segoe UI, Helvetica Neue, sans-serif;
+    height: auto;
+    padding: 12px;
+    line-height: 1.7;
+}
+
+.question-field input[type=text]:focus,
+.question-field textarea:focus {
     outline: 3px solid #ebf5fa;
     border-color: #399ccb;
 }

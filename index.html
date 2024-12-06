@@ -16,34 +16,34 @@
         <div class="question-field">
             <label>Question Type</label>
             <input type="text" value="Options">
-            <p>This is the name which will appear on the EDIT page</p>
+            <p>Choose the type of question</p>
         </div>
         <div class="question-field">
             <label>Question Name</label>
             <input type="text" value="Property Type">
-            <p>This is the name which will appear on the EDIT page</p>
+            <p>This will appear as the question name</p>
         </div>
         <div class="question-field">
             <label>Question Description</label>
             <input type="text" value="Select the type of your property">
-            <p>This is the name which will appear on the EDIT page</p>
-        </div>
+            <p>This will appear as the question description</p>
+        </div>        
         <div class="question-field">
             <label>Question Choices</label>
             <textarea name="" id="" rows="5" cols="20">
-            Single Family
-            Multi-Family
-            Condominium
-            Mobile Home
+Single Family ; single family
+Multi-Family ; multi-family
+Condominium ; condominium
+Mobile Home ; mobile home
             </textarea>
             <p>Enter each choice on a new line.</p>
             <p>For more control, you may specify both a value and label like this:</p>
-            <p>red : Red</p>
+            <p>Red : red</p>
         </div>
         <div class="question-field">
             <label>Default Value</label>
-            <input type="text">
-            <p>Enter each default value on a new line</p>
+            <input type="text" value="Single Family">
+            <p>Set the default value for this question</p>
         </div>
         <div class="question-field">
             <label>Return Format</label>
@@ -57,7 +57,7 @@
                     Label
                 </label>
                 <label>
-                    <input type="radio" name="format">
+                    <input type="radio" name="format" checked>
                     Both (Array)
                 </label>
             </div>
@@ -75,12 +75,22 @@
         </div>
         <div class="question-field true-false">
             <label class="switch">
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <span class="slider round"></span>
             </label>
             <div class="question-label">
-                <label>Select Multiple</label>
-                <p>Allow content editors to select multiple values</p>
+                <label>Allow Custom Themes</label>
+                <p>Enable users to customize their interface themes</p>
+            </div>
+        </div>
+        <div class="question-field true-false">
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+            <div class="question-label">
+                <label>Enable Auto Save</label>
+                <p>Automatically save user progress every few minutes</p>
             </div>
         </div>
         <div class="question-settings-footer">
