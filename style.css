@@ -31,6 +31,7 @@ body {
     flex-direction: column;
     width: 100%;
     gap: 32px;
+    padding-top: 32px;
     padding-left: 72px;
     padding-right: 72px;
     padding-bottom: 32px;
@@ -86,6 +87,7 @@ body {
     gap: 3px;
 }
 
+.question-field select,
 .question-field input[type=text],
 .question-field textarea {
     height: 48px;
@@ -101,6 +103,8 @@ body {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.5;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .question-field textarea {
@@ -110,6 +114,7 @@ body {
     line-height: 1.7;
 }
 
+.question-field select:focus,
 .question-field input[type=text]:focus,
 .question-field textarea:focus {
     outline: 3px solid #ebf5fa;
@@ -222,6 +227,7 @@ body {
 .question-settings-footer {
     display: flex;
     align-items: center;
+    white-space: nowrap;
     gap: 12px;
 }
 
@@ -248,7 +254,18 @@ body {
 
 @media screen and (max-width: 600px) {
 
+    .question-settings-bar {
+        width: 100vw;
+        white-space: nowrap;
+        overflow-x: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-left: -24px;
+        margin-right: -24px;
+    }
+
     .question-settings {
+        padding-top: 24px;
         padding-left: 24px;
         padding-right: 24px;
         padding-bottom: 24px;

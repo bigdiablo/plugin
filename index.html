@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HL Plugin</title>
+    <title>Harmony Leads Plugin</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="question-settings">
         <div class="question-settings-bar">
             <a class="question-tab-type active">General</a>
+            <a class="question-tab-type">Style</a>
+            <a class="question-tab-type">Prepopulate Data</a>
             <a class="question-tab-type">Validation</a>
             <a class="question-tab-type">Conditional Logic</a>            
         </div>
         <div class="question-field">
-            <label>Question Type</label>
-            <input type="text" value="Options">
+            <label for="question-type">Question Type</label>
+            <select>
+                <option value="" selected disabled>Choose...</option>
+                <option value="">Multiple Choice</option>
+                <option value="">True/False</option>
+                <option value="">Address</option>
+                <option value="">Slider</option>
+            </select>
             <p>Choose the type of question</p>
-        </div>
+        </div>        
         <div class="question-field">
             <label>Question Name</label>
             <input type="text" value="Property Type">
